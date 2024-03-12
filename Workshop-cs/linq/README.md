@@ -172,6 +172,39 @@ var verdubbeld = from n in numbers
 verdubbeld.ToList().ForEach(Console.WriteLine); // 2 4 6 8 10 12 14 16 18 20
 ```
 
+## Eigen Linq Functies
+
+Je kan ook je eigen Linq functies maken. Dit is handig als je een bepaalde functionaliteit vaak nodig hebt.
+
+```csharp
+public static class LinqExtensions
+{
+    /// <summary>
+    /// Deze functie filtert de elementen uit een lijst die niet voldoen aan een bepaalde conditie
+    /// </summary>
+    /// <typeparam name="T"> het type van de elementen in de lijst </typeparam>
+    /// <param name="source"> de lijst met elementen </param>
+    /// <param name="predicate"> de conditie waaraan de elementen moeten voldoen </param>
+    /// <returns> de elementen die niet voldoen aan de conditie </returns>
+    public static IEnumerable<T> WhereNot<T>(this IEnumerable<T> source, Func<T, bool> predicate)
+    {
+        return source.Where(item => !predicate(item));
+    }
+}
+
+int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+var groterDan5 = numbers.WhereNot(n => n < 5).ToList();
+
+groterDan5.ForEach(n => Console.WriteLine(n)); // 5 6 7 8 9 10
+```
+
+Dit is natuurlijk een hele simpele functie, die eigenlijk al bestaat in Linq. Maar het is een goed voorbeeld om te laten zien.
+
 ## Conclusie
 
 Linq is een hele krachtige tool die het schrijven van queries veel makkelijker maakt.
+
+## Volgende Stap
+
+Ga door met [Reflection](../Reflection/README.md).

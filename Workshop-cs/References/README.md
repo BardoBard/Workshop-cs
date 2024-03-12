@@ -2,14 +2,15 @@
 
 ## Inhoudsopgave
 
-- [Inleiding](#inleiding)
-- [Datatypes](#datatypes)
-  - [Primative vs complex datatypes](#primative-vs-complex-datatypes)
-- [Functies](#functies)
-  - [Ref en out](#ref-en-out)
-- [Strings](#strings)
-- [Diepere materie](#diepere-materie)
-- [Conclusie](#conclusie)
+- [References](#references)
+    - [Inleiding](#inleiding)
+    - [Datatypes](#datatypes)
+        - [Primative vs complex datatypes](#primative-vs-complex-datatypes)
+    - [Functies](#functies)
+        - [Ref en out](#ref-en-out)
+    - [Strings](#strings)
+    - [Diepere materie](#diepere-materie)
+    - [Conclusie](#conclusie)
 
 ## Inleiding
 
@@ -187,3 +188,7 @@ In c++ moeten we expliciet aangeven dat we een referentie willen maken, terwijwi
 een belangrijk concept om te begrijpen, omdat het veel invloed heeft op hoe je code werkt. Het is belangrijk om te weten
 wanneer je een referentie maakt en wanneer je een kopie maakt. Dit kan namelijk veel invloed hebben op de performance
 van je code.
+
+## Volgende stap
+
+Ga door met [Generics](../Generics/README.md).
