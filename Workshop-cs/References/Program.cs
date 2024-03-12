@@ -1,8 +1,4 @@
-﻿// In c# heb je geen reference symbool, alle non-primitive types zijn referentie types
-// C# heeft wel pointers, maar deze worden vrijwel nooit gebruikt en zijn niet nodig voor de meeste applicaties
-// C# heeft ook geen pass by reference, maar je kan wel een referentie van een variabele doorgeven
-
-// primitive types zijn: int, float, double, char, bool, byte, sbyte, short, ushort, uint, long, ulong
+﻿namespace References;
 
 /// <summary>
 /// Een class die een int randomVariable bevat
@@ -20,7 +16,6 @@ public class RandomClass
     /// <param name="randomVariable">De random variabele</param>
     public RandomClass(int randomVariable)
     {
-        sbyte
         this.RandomVariable = randomVariable;
     }
 };
@@ -31,7 +26,7 @@ class Program
     /// Verander de waarde van een RandomClass instantie
     /// </summary>
     /// <param name="h">De RandomClass instantie</param>
-    private static void changeFunction(RandomClass h)
+    private static void ChangeFunction(RandomClass h)
     {
         h.RandomVariable = 10;
     }
@@ -42,7 +37,7 @@ class Program
     static void Main()
     {
         RandomClass h = new RandomClass(6); // maak een nieuwe instantie van RandomClass
-        changeFunction(h); // dit veranderd de waarde van h.randomVariable naar 10 
+        ChangeFunction(h); // dit veranderd de waarde van h.randomVariable naar 10 
         Console.WriteLine(h.RandomVariable); // 10
     }
 }

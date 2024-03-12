@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "References", "References\References.csproj", "{BBC8195C-6BBE-47C7-9904-7B6BBCB954D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq", "linq\linq.csproj", "{B7A08125-57BB-417A-9490-81FE3B0DE5A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BBC8195C-6BBE-47C7-9904-7B6BBCB954D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBC8195C-6BBE-47C7-9904-7B6BBCB954D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBC8195C-6BBE-47C7-9904-7B6BBCB954D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A08125-57BB-417A-9490-81FE3B0DE5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A08125-57BB-417A-9490-81FE3B0DE5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A08125-57BB-417A-9490-81FE3B0DE5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A08125-57BB-417A-9490-81FE3B0DE5A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
