@@ -1,0 +1,10 @@
+.idea
+.vs
+
+# Output c#
+bin
+debug
+obj
+
+# user files
+*.user
