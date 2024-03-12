@@ -57,7 +57,8 @@ int? c = 10;
 //int d = a + b; // dit geeft een compile error
 int? e = a + c; // dit is toegestaan
 
-Console.WriteLine(a);
+Console.WriteLine(a); // ""
+Console.WriteLine(e); // ""
 ```
 
 ### Null Coalescing Operator
