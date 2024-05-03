@@ -127,4 +127,4 @@ waardoor het van belang is dat de templated code zichtbaar is.
 
 ## Volgende Stap
 
-Ga door met [Linq](../Linq/README.md).
+Ga door met [Linq](../linq/README.md).
